@@ -10,9 +10,9 @@ const start = document.getElementById('start'),
     monthSavingsValue = document.querySelector('.monthsavings-value'),
     yearSavingsValue = document.querySelector('.yearsavings-value'),
     expensesInputs = document.getElementsByClassName('expenses-item'),
-    btns = document.getElementsByTagName('button'),
-    confButtons = [],
-    calcButtons = [],
+    btnExpenses = document.getElementsByTagName('button')[0],
+    btnOptExpenses = document.getElementsByTagName('button')[1],
+    btnCalc = document.getElementsByTagName('button')[2],
     optionalExpensesInputs = document.querySelectorAll('.optionalexpenses-item'),
     chooseIncome = document.querySelector('.choose-income'),
     checkSavings = document.querySelector('#savings'),
@@ -21,12 +21,3 @@ const start = document.getElementById('start'),
     yearValue = document.querySelector('.year-value'),
     monthValue = document.querySelector('.month-value'),
     dayValue = document.querySelector('.day-value');
-
-for (let i = 0; i < btns.length; i++) {
-    if (btns[i].innerHTML == 'Утвердить') {
-        confButtons.push(btns[i]);
-    }
-    if (btns[i].innerHTML == 'Рассчитать') {
-        calcButtons.push(btns[i]);
-    }
-}
